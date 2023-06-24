@@ -1,0 +1,22 @@
+.mycard {
+  height: 300px;
+  position: relative;
+  overflow: hidden;
+}
+.mycard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.overlay {
+  height: 350px;
+  width: 100%;
+  background-color: rgb(255, 0, 0, 0.5);
+  position: absolute;
+  top: 0;
+  opacity: 0;
+  transition: all ease-in 0.5s;
+}
+.mycard:hover .overlay {
+  opacity: 1;
+}
